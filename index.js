@@ -32,6 +32,8 @@ function even(value){
 }
 const evenPrice = coffeeMenu.filter(even);
 
+// const limited = extractValue(seasonalDrinks, 'name');
+
 console.log(evenPrice);
 //print the total if you were to order one of every drink
 
@@ -48,7 +50,9 @@ function seasonal(value){
 }
 const seasonalDrinks = coffeeMenu.filter(seasonal);
 
-console.log(seasonalDrinks);
+const limited = extractValue(seasonalDrinks, 'name');
+
+console.log(limited);
 
 //print all the seasonal drinks with the words "with imported beans"
 
